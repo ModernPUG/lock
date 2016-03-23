@@ -7,12 +7,6 @@
 [![Packagist Version](https://img.shields.io/packagist/v/beatswitch/lock.svg?style=flat-square)](https://packagist.org/packages/beatswitch/lock)
 [![Total Downloads](https://img.shields.io/packagist/dt/beatswitch/lock.svg?style=flat-square)](https://packagist.org/packages/beatswitch/lock)
 
-<img width="100%" src="https://s3.eu-central-1.amazonaws.com/assets.beatswitch.com/lock_banner.png">
-
-> I'm sad to say that Lock is currently not maintained. I won't be able to offer support or accept new contributions for the current time being. Other priorities are keeping me from putting the work into Lock that it deserves. Eventually I'll try to pick up work again but unfortunately I cannot say when. My thanks goes out to all the contributors and users.
->
-> -- Dries
-
 Lock is a flexible, driver based **Acl** package for **PHP 5.4+**.
 
 Created by [Dries Vints](https://twitter.com/driesvints). Made possible thanks to [BeatSwitch](https://beatswitch.com). Inspired by [Authority](https://github.com/machuga/authority) by [Matthew Machuga](https://twitter.com/machuga). Logo by [Jerry Low](http://www.jerrylow.com).
@@ -699,7 +693,7 @@ We'll assume we have a `CallerPermission` model class with at least the followin
 
 - `caller_type` (varchar, 100)
 - `caller_id` (int, 11)
-- `type` (varchar, 10)
+- `type` (varchar, 20)
 - `action` (varchar, 100)
 - `resource_type` (varchar, 100, nullable)
 - `resource_id` (int, 11, nullable)
@@ -707,7 +701,7 @@ We'll assume we have a `CallerPermission` model class with at least the followin
 And we have a `RolePermission` model with the following database columns:
 
 - `role` (varchar, 100)
-- `type` (varchar, 10)
+- `type` (varchar, 20)
 - `action` (varchar, 100)
 - `resource_type` (varchar, 100, nullable)
 - `resource_id` (int, 11, nullable)
