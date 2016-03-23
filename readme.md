@@ -693,7 +693,7 @@ We'll assume we have a `CallerPermission` model class with at least the followin
 
 - `caller_type` (varchar, 100)
 - `caller_id` (int, 11)
-- `type` (varchar, 10)
+- `type` (varchar, 20)
 - `action` (varchar, 100)
 - `resource_type` (varchar, 100, nullable)
 - `resource_id` (int, 11, nullable)
@@ -701,7 +701,7 @@ We'll assume we have a `CallerPermission` model class with at least the followin
 And we have a `RolePermission` model with the following database columns:
 
 - `role` (varchar, 100)
-- `type` (varchar, 10)
+- `type` (varchar, 20)
 - `action` (varchar, 100)
 - `resource_type` (varchar, 100, nullable)
 - `resource_id` (int, 11, nullable)
